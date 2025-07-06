@@ -1,0 +1,18 @@
+{
+    "name": "rhea/ccawebsiteservice",
+    "require": {
+        "dotainion/query-permission": "^1.0",
+        "dotainion/security-tools": "^1.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "authors": [
+        {
+            "name": "dotainion",
+            "email": "58013018+dotainion@users.noreply.github.com"
+        }
+    ]
+}

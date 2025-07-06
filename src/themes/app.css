@@ -1,0 +1,288 @@
+.bg-darker{
+    background-color: var(--bg-darker) !important;
+}
+
+.sidebar{
+    min-width: 80px;
+    max-width: 80px;
+}
+
+.sidebar .btn{
+    color: var(--color-orange);
+    border-radius: 0;
+}
+
+.sidebar .btn:hover{
+    color: var(--color-orange-hover);
+}
+
+.sidebar .btn:active{
+    color: var(--color-orange) !important;
+}
+
+.sidebar .active{
+    background-color: var(--bg-dark) !important;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sidebar .active svg{
+    color: white !important;
+    background-color: var(--color-orange);
+}
+
+.sidebar .active .btn{
+    background-color: var(--bg-dark);
+    border-radius: 10px;
+}
+
+.sidebar .previous{
+    border-bottom-right-radius: 10px;
+    background-color: var(--bg-darker) !important;
+}
+
+.sidebar .next{
+    border-top-right-radius: 10px;
+    background-color: var(--bg-darker) !important;
+}
+
+.search{
+    background-color: rgb(255, 255, 255, 0.05);
+    border: 1px solid rgb(255, 255, 255, 0.05) !important;
+}
+
+.search input::placeholder, 
+input.bg-dark::placeholder, 
+input.bg-darker::placeholder,
+textarea.bg-dark::placeholder, 
+textarea.bg-darker::placeholder{
+    color: gray !important;
+}
+
+.cart-col-size{
+    min-width: 45px;
+    max-width: 45px;
+    min-height: 45px;
+    max-height: 45px;
+}
+
+.cart-col-size.h-0{
+    min-height: 0 !important;
+    max-height: 0 !important;
+}
+
+input.cart-col-size, input.cart-description{
+    outline: none;
+    border: 1px solid var(--color-lightly) !important;
+}
+
+.cart{
+    min-width: 320px;
+    max-width: 320px;
+}
+
+.payment-method-btn{
+    color: white !important;
+    min-width: 86px;
+    max-width: 86px;
+    border: 1px solid var(--color-lightly) !important;
+}
+
+.card{
+    border: none !important;
+    overflow: hidden;
+    background-color: var(--bg-darker) !important;
+}
+
+.card-body{
+    background-color: transparent;
+    overflow: hidden;
+    border: none !important;
+    color: white !important;
+    border-radius: 10px;
+}
+
+.dropdown-menu{
+    max-height: 80vh;
+}
+
+.dropdown-item{
+    cursor: pointer;
+}
+
+.dropdown-menu.bg-darker{
+    background-color: var(--bg-darker);
+}
+
+.dropdown-menu.bg-darker .dropdown-item{
+    color: white;
+}
+
+.dropdown-menu.bg-darker .dropdown-item:hover{
+    background-color: var(--bg-dark);
+}
+
+.dropdown-menu.bg-dark .dropdown-item{
+    color: white;
+}
+
+.dropdown-menu.bg-dark .dropdown-item:hover{
+    background-color: var(--bg-darker);
+}
+
+.table thead{
+    border-bottom: 1px solid var(--color-lightly) !important;
+}
+
+.table:not(.border):not(.border-bottom), 
+.table tr:not(.border):not(.border-bottom), 
+.table tr td:not(.border):not(.border-bottom), 
+.table tr th:not(.border):not(.border-bottom){
+    border: none !important;
+    background-color: var(--bg-darker);
+    color: lightgray;
+}
+
+.pointer, .form-check-input, .form-check-label{
+    cursor: pointer;
+}
+
+.cursor-default{
+    cursor: default !important;
+}
+
+.pointer-effect:hover{
+    outline: 1px solid var(--color-orange) !important;
+}
+
+.modal-overlay{
+    max-height: 100vh !important;
+}
+
+.modal-overlay img{
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.modal-overlay .details{
+    min-width: 500px;
+}
+
+.modal-overlay .children{
+    min-width: 500px;
+}
+
+.restaurant-img-container{
+    height: 200px;
+}
+
+.restaurant-img-container .logo{
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 100px;
+    max-height: 100px;
+    top: -20px;
+    left: -20px;
+}
+
+.restaurant-entry{
+    width: 738px;
+}
+
+.layout .backdrop, .layout .menu{
+    z-index: 999999999;
+}
+
+input[type=checkbox], input[type=checkbox]:focus, input[type=radio], input[type=radio]:focus{
+    width: 18px;
+    height: 18px;
+    border-color: var(--color-lightly) !important;
+    accent-color: var(--color-green) !important;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked, input[type=radio]:checked{
+    border-color: var(--color-lightly) !important;
+}
+
+.form-switch .form-check-input {
+    width: 32px !important;
+    background-color: var(--color-lightly);
+}
+
+.form-switch .form-check-input:checked {
+    background-color: var(--color-orange);
+    border-color: var(--color-orange);
+}
+
+.form-switch .form-check-input::before {
+    background-color: #fff;
+}
+
+.form-switch .form-check-input:active {
+    background-color: var(--color-yellow) !important;
+    border-color: var(--color-yellow);
+}
+
+input[type='date'], input[type='time'] {
+    accent-color: var(--color-orange);
+}
+
+input[type='date']::-webkit-calendar-picker-indicator, input[type='time']::-webkit-calendar-picker-indicator {
+  filter: brightness(0) saturate(100%) invert(81%) sepia(32%) saturate(750%) hue-rotate(325deg) brightness(96%) contrast(92%);
+}
+
+.editable:empty::before, .editable:focus:empty::before, .editable:has(br:only-child)::before {
+  content: attr(data-placeholder);
+  color: gray;
+}
+
+.editable:focus:has(br:only-child)::before {
+  content: '';
+}
+
+.messangers{
+    min-width: 250px;
+    max-width: 250px;
+}
+
+input[type=date], input[type=time]{
+    position: relative;
+    user-select: none;
+    -webkit-appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+}
+
+input[type=time]{
+    padding-right: 30px;
+}
+
+input[type="date"] {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23888' viewBox='0 0 24 24'%3E%3Cpath d='M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H5V8h14v13z'/%3E%3C/svg%3E");
+}
+
+input[type="time"] {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23888' viewBox='0 0 24 24'%3E%3Cpath d='M12 1a11 11 0 1 0 0 22 11 11 0 0 0 0-22zm1 11.59l3.7 2.13-.75 1.3L11 13V6h2v6.59z'/%3E%3C/svg%3E");
+}
+  
+input[type=date]::-webkit-calendar-picker-indicator, input[type=time]::-webkit-calendar-picker-indicator{
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    width: auto;
+    z-index: 2000;
+}
+
+.border.border-lightly.border-bottom-0{
+    border-bottom: none !important;
+}
