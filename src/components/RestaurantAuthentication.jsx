@@ -2,7 +2,6 @@ import { Fragment, useLayoutEffect, useState } from "react"
 import { useAuth } from "../providers/AuthProvider"
 import { api } from "../request/Api";
 import { useUtils } from "../providers/UtilsProvider";
-import { token } from "../utils/Token";
 
 export const RestaurantAuthentication = ({children}) =>{
     const { setLoading } =  useUtils();
@@ -31,13 +30,6 @@ export const RestaurantAuthentication = ({children}) =>{
                     <div className="container my-3">
                         <h2 className="fw-bold mb-1">Select a Restaurant</h2>
                         <p className="fs-6">Manage one of your restaurant locations</p>
-                        <button onClick={()=>{
-                            api.auth.logout().then((res)=>{
-                                console.log(res.data.data);
-                            }).catch((error)=>{
-                                console.log(error);
-                            })
-                        }}>Logout</button>
                     </div>
                     <div className="overflow-auto scrollbar-md">
                         <div className="container">
