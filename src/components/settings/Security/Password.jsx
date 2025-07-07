@@ -27,7 +27,7 @@ export const Password = () =>{
         });
     }
     return(
-        <div className="p-sm-4 p-2 bg-darker text-light rounded shadow-sm" style={{maxWidth: '500px'}}>
+        <div className="p-sm-4 p-2 bg-darker text-light rounded shadow-sm m-3" style={{maxWidth: '500px'}}>
             <h4 className="mb-4 d-flex align-items-center gap-2"><FiShield size={22} /> Security Settings</h4>
 
             <div className="mb-4">

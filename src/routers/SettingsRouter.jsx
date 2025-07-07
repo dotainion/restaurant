@@ -16,7 +16,7 @@ export const SettingsRouter = () =>{
             <Routes>
                 <Route path="product/management/*" element={<ProductManagementRouter/>} />
                 <Route path="restaurant" element={<Restaurant/>} />
-                <Route path="security" element={<Security/>} />
+                <Route path="security/*" element={<Security/>} />
                 <Route path="notifications" element={<Notifications/>} />
                 <Route path="appearance" element={<Appearance/>} />
                 <Route path="finance/*" element={<FinanceRouter/>} />
