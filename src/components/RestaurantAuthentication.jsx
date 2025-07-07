@@ -15,6 +15,9 @@ export const RestaurantAuthentication = ({children}) =>{
         if(!user) return;
         setLoading(true);
         api.restaurant.list({userId: user.id}).then((response)=>{
+            if(response.data.data.length === 1){
+                return registerRestaurant(response.data.data[0]);
+            }
             setRestaurnts(response.data.data);
         }).catch((error)=>{
 

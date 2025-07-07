@@ -8,6 +8,7 @@ import { ProductManagementRouter } from "./ProductManagementRouter"
 import { FinanceRouter } from "./FinanceRouter"
 import { Orders } from "../components/settings/orders/Orders"
 import { ViewOrder } from "../components/settings/orders/ViewOrder"
+import { ProfileLayout } from "../layouts/ProfileLayout"
 
 export const SettingsRouter = () =>{
     return(
@@ -21,6 +22,7 @@ export const SettingsRouter = () =>{
                 <Route path="finance/*" element={<FinanceRouter/>} />
                 <Route path="orders" element={<Orders/>} />
                 <Route path="view/order/:orderId" element={<ViewOrder/>} />
+                <Route path="profile/*" element={<ProfileLayout/>} />
                 <Route path="*" element={<Navigate to="/settings/product/management"/>} />
             </Routes>
         </SettingsLayout>

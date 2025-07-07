@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Password } from './Password';
-import { AssignPermission } from './AssignPermission';
 import { PermissionViewer } from './PermissionViewer';
+import { UserBuilder } from '../users/UserBuilder';
 
 const property = {
     security: 'security',
@@ -45,7 +45,7 @@ export const Security = () =>{
                         <Password/>
                     </div>
                 )}
-                {tab === property.users && <AssignPermission/>}
+                {tab === property.users && <UserBuilder/>}
                 {tab === property.permission && <PermissionViewer/>}
             </div>
         </div>
